@@ -1,0 +1,27 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Designed By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @all_values.each do |value| %>
+          <tr>
+            <td>
+              <%= value["Name"] %>
+            </td>
+            <td>
+              <%= value["Type"] %>
+            </td>
+            <td>
+              <%= value["Designed by"] %>
+            </td>
+          </tr>
+      <%end%>
+    </tbody>
+  </table>
+</div>
+<button><%= link_to 'Back to search', root_path %></button>
