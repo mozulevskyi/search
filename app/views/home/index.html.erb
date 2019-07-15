@@ -1,8 +1,12 @@
-<h1>Hello, type anything to find something.</h1>
-<div>
+<div class="index-style">
+  <h1 class="index-title">Hello, this is simple search app with preload data.</h1>
   <%= form_tag(input_data_path, method: :get) do %>
-      <%= select_tag :variant, options_for_select([:by_name, :by_type, :by_design], :by_name) %>
-      <%= text_field_tag :option %>
-      <%= submit_tag 'Search' %>
+      <a title="You can chose between three options: name, type, design.">
+        <%= select_tag :variant, options_for_select([:by_name, :by_type, :by_design], :by_name), class: 'index-submit-select' %>
+      </a>
+      <a title="Then fill in what you are looking for according to the chosen option.">
+        <%= text_field_tag :option, '', class: 'index-form-text' %>
+      </a>
+      <%= submit_tag 'Search', class: 'index-submit-select' %>
   <% end %>
 </div>
