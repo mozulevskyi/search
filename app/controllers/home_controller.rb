@@ -9,7 +9,6 @@ class HomeController < ApplicationController
     if params[:variant] == 'by_name'
       @format = ByName.new
     elsif params[:variant] == 'by_type'
-      debugger
       @format = ByType.new
     elsif params[:variant] == 'by_design'
       @format = ByDesign.new

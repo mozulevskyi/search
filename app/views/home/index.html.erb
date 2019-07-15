@@ -1,7 +1,7 @@
 <h1>Hello, type anything to find something.</h1>
 <div>
   <%= form_tag(input_data_path, method: :get) do %>
-      <%= select_tag :variant, options_for_select([:by_name, :by_type, :by_designed], :by_name) %>
+      <%= select_tag :variant, options_for_select([:by_name, :by_type, :by_design], :by_name) %>
       <%= text_field_tag :option %>
       <%= submit_tag 'Search' %>
   <% end %>
