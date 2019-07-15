@@ -1,24 +1,7 @@
-# README
+# Sample Search Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is sample search application with preload data from .json file.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+What in use for this project:
+* Ruby version - 2.6.2
+* Rails version - 5.2.3
